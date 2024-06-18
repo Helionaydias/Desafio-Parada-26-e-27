@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Cadastro de Usuário</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <form method="get" action=".">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+      </div>
+      <div>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome..">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+      </div>
+      <div>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" size="10" maxlength="9" placeholder="00000-000" onblur="pesquisacep(this.value);">
+      </div>
+      <div>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua" size="60">
+      </div>
+      <div>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" size="40">
+      </div>
+      <div>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" size="40">
+      </div>
+      <div>
+        <label for="uf">Estado:</label>
+        <input type="text" id="uf" name="uf" size="2">
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+
+</html>
